@@ -1,9 +1,10 @@
 import React from 'react';
 import type {Node} from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, Image} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import DrawerNavigator from './components/DrawerNavigator';
+import RestaurantScreen from './pages/Restaurant';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,33 @@ const App: () => Node = () => {
             name="DrawerNavigator"
             component={DrawerNavigator}
             options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Restaurant"
+            component={RestaurantScreen}
+            options={{
+              headerTitle: () => (
+                <Image
+                  style={{
+                    width: 90,
+                    height: 37,
+                    resizeMode: 'contain',
+                  }}
+                  source={require('./assets/logo-pink.png')}
+                />
+              ),
+              headerBackImage: () => (
+                <Image
+                  style={{
+                    width: 30,
+                    height: 30,
+                    marginLeft: 10,
+                  }}
+                  source={require('./assets/icons/back.png')}
+                />
+              ),
+              headerBackTitleVisible: false,
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>

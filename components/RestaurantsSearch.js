@@ -15,9 +15,9 @@ const restaurants = getRestaurants();
 
 const RestaurantCard = ({logoUrl, id, isActive}) => {
   const navigation = useNavigation();
-  const handleClick = id => {
+  const handleClick = restaurantId => {
     if (isActive) {
-      navigation.navigate('Restaurant', {id: id});
+      navigation.navigate('Restaurant', {id: restaurantId});
     } else {
       alert('Whoops! Has llegado al final del demo');
     }

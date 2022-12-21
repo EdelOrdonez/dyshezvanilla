@@ -4,9 +4,9 @@ import RestaurantHeader from '../ui/molecules/RestaurantHeader';
 import RestaurantTabs from '../ui/molecules/RestaurantTabs';
 import {getRestaurant} from '../utils/restaurantsData';
 import RestaurantDetails from '../ui/molecules/RestaurantDetails';
-// import BottomModal from '../ui/molecules/BottomModal';
-// import MenuModal from '../ui/molecules/MenuModal';
-// import ShareModal from '../ui/molecules/ShareModal';
+import BottomModal from '../ui/molecules/BottomModal';
+import MenuModal from '../ui/molecules/MenuModal';
+import ShareModal from '../ui/molecules/ShareModal';
 
 const Restaurant = ({route}) => {
   const restaurant = getRestaurant(route.params.id);
@@ -51,6 +51,20 @@ const Restaurant = ({route}) => {
         />
       )}
       <RestaurantTabs id={restaurant.id} />
+      <BottomModal
+        modalVisible={isBottomModalVisible}
+        setIsBottomModalVisible={setIsBottomModalVisible}
+        handleMenuModal={handleMenuModal}
+        handleShareModal={handleShareModal}
+      />
+      <MenuModal
+        modalVisible={isMenuModalVisible}
+        handleMenuModal={handleMenuModal}
+      />
+      <ShareModal
+        modalVisible={isShareModalVisible}
+        handleShareModal={handleShareModal}
+      />
     </View>
   );
 };

@@ -1,18 +1,18 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import ProfileTabs from '../ui/molecules/ProfileTabs';
-import ProfileHeader from '../ui/molecules/ProfileHeader';
-import Badges from '../ui/molecules/Badges';
+import SearchBar from '../components/SearchBar';
+import Address from '../ui/molecules/Address';
+import FeedTabs from '../ui/molecules/FeedTabs';
 
-function Profile() {
+const AllResults = () => {
   return (
     <View style={styles.searchContainer}>
-      <ProfileHeader />
-      <Badges />
-      <ProfileTabs />
+      <SearchBar />
+      <Address />
+      <FeedTabs />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   searchContainer: {
@@ -20,8 +20,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 0,
     height: '110%',
-    flexDirection: 'column',
   },
 });
 
-export default Profile;
+export default AllResults;

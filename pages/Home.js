@@ -1,14 +1,14 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 import SearchBar from '../components/SearchBar';
-import Address from '../ui/molecules/Adress';
+// import Address from '../ui/molecules/Address';
 import RestaurantsSearch from '../components/RestaurantsSearch';
 
 function Home() {
   return (
     <View style={styles.searchContainer}>
       <SearchBar isHome />
-      <Address />
+      {/* <Address /> */}
       <Text style={styles.title}>Restaurantes Cercanos</Text>
       <RestaurantsSearch />
     </View>

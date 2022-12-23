@@ -8,7 +8,6 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-// import Restaurant from '../pages/Restaurant';
 import {getRestaurants} from '../utils/restaurantsData';
 
 const restaurants = getRestaurants();

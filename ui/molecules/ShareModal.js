@@ -24,14 +24,14 @@ const ShareModal = ({modalVisible, handleShareModal}) => {
           <Pressable style={styles.button} onPress={handleShareModal}>
             {/** Change icon */}
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/copy.png')}
               style={styles.icon}
             />
             <Text style={styles.text}>Copiar Link</Text>
           </Pressable>
           <Pressable style={styles.button} onPress={handleShareModal}>
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/report.png')}
               style={styles.icon}
             />
             <Text style={styles.text}>Reportar</Text>
@@ -40,31 +40,31 @@ const ShareModal = ({modalVisible, handleShareModal}) => {
         <View style={styles.buttons}>
           <Pressable style={styles.socials}>
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/story.png')}
               style={{height: 50, width: 50}}
             />
           </Pressable>
           <Pressable style={styles.socials}>
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/insta.png')}
               style={{height: 70, width: 70}}
             />
           </Pressable>
           <Pressable style={styles.socials}>
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/twitter.png')}
               style={{height: 42, width: 50}}
             />
           </Pressable>
           <Pressable style={styles.socials}>
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/facebook.png')}
               style={{height: 50, width: 50}}
             />
           </Pressable>
           <Pressable style={styles.socials}>
             <Image
-              source={require('../../assets/icons/bills.png')}
+              source={require('../../assets/icons/whats.png')}
               style={{height: 50, width: 50}}
             />
           </Pressable>

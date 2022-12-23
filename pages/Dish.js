@@ -12,9 +12,6 @@ const Dish = ({route}) => {
       <Pressable style={styles.button}>
         <Text style={styles.text}>Agregar a cuenta</Text>
       </Pressable>
-      <Pressable style={styles.button}>
-        <Text style={styles.text}>Agregar a cuenta</Text>
-      </Pressable>
       <Pressable style={styles.circle1}>
         <Image
           style={{
